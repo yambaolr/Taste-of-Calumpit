@@ -1,0 +1,191 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!--CSS Stylesheet-->
+    <link rel="stylesheet" href="css/styles.min.css">
+
+    <!--Fredoka Font-->
+    <link href="https://fonts.googleapis.com/css2?family=Fredoka:wght@300..700&display=swap" rel="stylesheet">
+
+    <!--DM Sans Font-->
+    <link href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&family=Fredoka:wght@300..700&display=swap" rel="stylesheet">
+
+    <title>Products - Availability | Taste Of Calumpit</title>
+
+    <!--Favicons-->
+    <link rel="apple-touch-icon" sizes="57x57" href="images/apple-icon-57x57.png">
+    <link rel="apple-touch-icon" sizes="60x60" href="images/apple-icon-60x60.png">
+    <link rel="apple-touch-icon" sizes="72x72" href="images/apple-icon-72x72.png">
+    <link rel="apple-touch-icon" sizes="76x76" href="images/apple-icon-76x76.png">
+    <link rel="apple-touch-icon" sizes="114x114" href="images/apple-icon-114x114.png">
+    <link rel="apple-touch-icon" sizes="120x120" href="images/apple-icon-120x120.png">
+    <link rel="apple-touch-icon" sizes="144x144" href="images/apple-icon-144x144.png">
+    <link rel="apple-touch-icon" sizes="152x152" href="images/apple-icon-152x152.png">
+    <link rel="apple-touch-icon" sizes="180x180" href="images/apple-icon-180x180.png">
+    <link rel="icon" type="image/png" sizes="192x192"  href="images/android-icon-192x192.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="images/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="96x96" href="images/favicon-96x96.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="images/favicon-16x16.png">
+
+    <!--Meta Tags-->
+    <meta name="description" content="Taste of Calumpit has a variety of longganisa products to choose from."/>
+    <meta name="keywords" content="Taste of Calumpit, Langgonisa, Calumpit, Culture, Philippine Food, Products">
+</head>
+
+<body>
+    <!--Navigation Bar-->
+    <div class="navbar">
+        <div class="tablet-style">
+            <a href="index.html">
+                <img src="images/toc_logo.png" alt="Logo of Taste of Calumpit"/>
+            </a>
+            <div class="tablet">
+                <h2>Taste Of</h2>
+                <h2>Calumpit</h2>
+            </div>
+        </div>
+        <nav class="navlinks" id="navlinks">
+            <ul>
+                <li><a href="about.html">About Us</a></li>
+                <li class="selected"><a href="products.html">Products</a></li>
+                <li><a href="order.html">Order Now</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+        </nav>
+
+        <!-- Tablet Mobile Nav-->
+	    <nav class="tablet-mobile-navbar">
+		    <div id="menu-links">
+                <a class="menu-icon" class="hamburger" onclick="hamburger()">
+                    <div class="x"><img src="images/x-icon.png" alt="close icon"></div>
+                </a>
+                <a href="about.html">About Us</a>
+                <a href="products.html" class="selected">Products</a> 
+                <a href="order.html">Order Now</a>
+                <a href="contact.html">Contact Us</a>
+            </div>
+		    <a class="menu-icon" class="hamburger" onclick="hamburger()">
+			    <div>&#9776;</div>
+		    </a>
+	    </nav>
+    </div>
+    <!--End Navigation Bar-->
+
+
+    <main id="products-main">
+        <h2 class="heading">Longganisa Varieties</h2>
+        <article id="varieties-section">
+            <div class="product" id="garlic">
+                <img src="images/toc_varieties_garlic.png" alt="Garlic Longganisa"/>
+                <div class="title"><h4>Garlic Longganisa</h4></div>
+                <p>Filipino sausage made with premium pork and generously seasoned with aromatic garlic.
+                </p>
+                <form action="order.html">
+                    <button class="order">ORDER NOW!</button>
+                </form>
+            </div>
+
+            <div class="product" id="sweet">
+                <img src="images/toc_varieties_sweet.png" alt="Sweet Longganisa"/>
+                <div class="title"><h4>Sweet Longganisa</h4></div>
+                <p>Filipino sausage crafted from high-quality pork, infused with a perfect blend of sweetness.
+                </p>
+                <form action="order.html">
+                    <button class="order">ORDER NOW!</button>
+                </form>
+            </div>
+
+            <div class="product" id="sweet-spicy">
+                <img src="images/toc_varieties_sweetandspicy.png" alt="Sweet and Spicy Longganisa"/>
+                <div class="title long"><h4>Sweet and Spicy Longganisa</h4></div>
+                <p>Filipino sausage that combines succulent pork with a harmonious mix of sweetness and a hint of spice.
+                </p>
+                <form action="order.html">
+                    <button class="order">ORDER NOW!</button>
+                </form>
+            </div>
+
+            <div class="product" id="chorizo">
+                <img src="images/toc_varieties_chorizo.png" alt="Chorizo Longganisa"/>
+                <div class="title"><h4>Chorizo Longganisa</h4></div>
+                <p>Filipino sausage with a blend of garlic, vinegar, and spices, both sweet and savory.
+                </p>
+                <form action="order.html">
+                    <button class="order">ORDER NOW!</button>
+                </form>
+            </div>
+
+            <div class="product" id="mushroom">
+                <img src="images/toc_varieties_mushroom.png" alt="Mushroom Longganisa"/>
+                <div class="title"><h4>Mushroom Longganisa</h4></div>
+                <p>A modern twist of the classic Longganisa. A vegetarian sausage perfect for a healthier alternative.
+                </p>
+                <form action="order.html">
+                    <button class="order">ORDER NOW!</button>
+                </form>
+            </div>
+        </article>
+        <section id="availabilities-section">
+            <h2 class="heading">Product Availability</h2>
+            <div class="mobile">
+                <ul>
+                    <li><span>Garlic Longganisa</span>: In Stock (Delivers in 3-5 Days)</li>
+                    <li><span>Sweet Longganisa</span>: In Stock (Delivers in 3-5 Days)</li>
+                    <li><span>Sweet and Spicy Longganisa</span>: Out of Stock</li>
+                    <li><span>Garlic Longganisa</span>: In Stock (Delivers in 3-5 Days)</li>
+                    <li><span>Garlic Longganisa</span>: In Stock (Delivers in 3-5 Days)</li>
+                </ul>
+            </div>
+            <table id ="avail-table">
+                <tr class="top">
+                    <th>Variety</th>
+                    <th>Availability</th>
+                    <th>Delivery Time</th>
+                </tr>
+                <tr class="normal">
+                    <td>Garlic Longganisa</td>
+                    <td>In Stock</td>
+                    <td>3-5 Days</td>
+                </tr>
+                <tr class="stripe">
+                    <td>Sweet Longganisa</td>
+                    <td>In Stock</td>
+                    <td>3-5 Days</td>
+                </tr>
+                <tr class="normal">
+                    <td>Sweet & Spicy Longganisa</td>
+                    <td>Out of Stock</td>
+                    <td> - </td>
+                </tr>
+                <tr class="stripe">
+                    <td>Chorizo Longganisa</td>
+                    <td>In Stock</td>
+                    <td>3-5 Days</td>
+                </tr>
+                <tr class="last-row normal">
+                    <td>Mushroom Longganisa</td>
+                    <td>In Stock</td>
+                    <td>3-5 Days</td>
+                </tr>
+            </table>
+        </section>
+    </main>
+
+    <footer>
+        <div id="contact-details">
+            <p>Taste of Calumpit</p>
+            <a href="https://www.facebook.com/christructure" target="_blank"><img src="images/facebook_logo.svg" alt="facebook logo"></a>
+            <a href="https://www.instagram.com/christructure/" target="_blank"><img src="images/ig_logo.svg" alt="instagram logo"></a>
+        </div>
+    
+        <p>&copy; 2024 | Lorin Yambao</p>
+    </footer>
+
+    <!--Script-->
+    <script src="scripts/script.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!--CSS Stylesheet-->
+    <link rel="stylesheet" href="css/styles.min.css">
+
+    <!--Fredoka Font-->
+    <link href="https://fonts.googleapis.com/css2?family=Fredoka:wght@300..700&display=swap" rel="stylesheet">
+
+    <!--DM Sans Font-->
+    <link href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&family=Fredoka:wght@300..700&display=swap" rel="stylesheet">
+
+    <title>Order Now! | Taste Of Calumpit</title>
+
+    <!--Favicons-->
+    <link rel="apple-touch-icon" sizes="57x57" href="images/apple-icon-57x57.png">
+    <link rel="apple-touch-icon" sizes="60x60" href="images/apple-icon-60x60.png">
+    <link rel="apple-touch-icon" sizes="72x72" href="images/apple-icon-72x72.png">
+    <link rel="apple-touch-icon" sizes="76x76" href="images/apple-icon-76x76.png">
+    <link rel="apple-touch-icon" sizes="114x114" href="images/apple-icon-114x114.png">
+    <link rel="apple-touch-icon" sizes="120x120" href="images/apple-icon-120x120.png">
+    <link rel="apple-touch-icon" sizes="144x144" href="images/apple-icon-144x144.png">
+    <link rel="apple-touch-icon" sizes="152x152" href="images/apple-icon-152x152.png">
+    <link rel="apple-touch-icon" sizes="180x180" href="images/apple-icon-180x180.png">
+    <link rel="icon" type="image/png" sizes="192x192"  href="images/android-icon-192x192.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="images/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="96x96" href="images/favicon-96x96.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="images/favicon-16x16.png">
+
+    <!--Meta Tags-->
+    <meta name="description" content="Taste of Calumpit has an online order form to buy your favorite langgonisa."/>
+    <meta name="keywords" content="Taste of Calumpit, Langgonisa, Calumpit, Culture, Philippine Food, Order">
+
+</head>
+
+<body>
+    <!--Navigation Bar-->
+    <div class="navbar">
+        <div class="tablet-style">
+            <a href="index.html">
+                <img src="images/toc_logo.png" alt="Logo of Taste of Calumpit"/>
+            </a>
+            <div class="tablet">
+                <h2>Taste Of</h2>
+                <h2>Calumpit</h2>
+            </div>
+        </div>
+        <nav class="navlinks" id="navlinks">
+            <ul>
+                <li><a href="about.html">About Us</a></li>
+                <li><a href="products.html">Products</a></li>
+                <li class="selected"><a href="order.html">Order Now</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+        </nav>
+
+        <!-- Tablet Mobile Nav-->
+	    <nav class="tablet-mobile-navbar">
+		    <div id="menu-links">
+                <a class="menu-icon" class="hamburger" onclick="hamburger()">
+                    <div class="x"><img src="images/x-icon.png" alt="close icon"></div>
+                </a>
+                <a href="about.html">About Us</a>
+                <a href="products.html">Products</a> 
+                <a href="order.html"  class="selected">Order Now</a>
+                <a href="contact.html">Contact Us</a>
+            </div>
+		    <a class="menu-icon" class="hamburger" onclick="hamburger()">
+			    <div>&#9776;</div>
+		    </a>
+	    </nav>
+    </div>
+    <!--End Navigation Bar-->
+
+    <!--Main-->
+    <main id="order-main">
+        <div class="order-image">
+            <img src="images/toc_order.png"  alt="Sausage on a plate"/>
+        </div>
+        <h2 class="heading">Order Form</h2>
+        <!--Form Start-->
+        <form class="form" method="post" onsubmit="return buy(event);">
+            <fieldset id="personal-info">
+                <legend>Personal Information</legend>
+                <label for="name">Name</label>
+                <input type="text" id="name" name="name" required />
+
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email" required placeholder="example@mail.com"/>
+
+                <label for="phone">Phone:</label>
+                <input type="tel" id="phone" name="phone" required placeholder="(123) 456-7890"/>
+
+                <label for="add">Address</label>
+                <input type="text" id="add" name="add" required />
+
+                <div id="address">
+                    <div id="address-left">
+                        <label for="street"  id="streetlbl">Street</label>
+                        <input type="text" id="street" name="street" required placeholder="House No., Street, Zone"/>
+                        
+                        <label for="province" id="provlbl">Province</label>
+                        <input type="text" id="province" name="province" required /> 
+                    </div>
+                    <div id="address-right">
+                        <label for="city" id="citylbl">City</label>
+                        <input type="text" id="city" name="city" required />
+                        <label for="zip" id="ziplbl">Zip Code</label>
+                        <input  type="number" max="9999" id="zip" name="zip" required/>     
+                    </div>                     
+                </div>
+                
+            </fieldset>
+
+            <fieldset id="order-info">
+                <legend>Order Information</legend>
+                <table>
+                    <tr>
+                        <th>Type</th>
+                        <th>Price</th>
+                        <th>Kilo</th>
+                    </tr>
+                    <tr>
+                        <td class="type">Garlic Longganisa</td>
+                        <td>150 / half kg</td>
+                        <td><input type="number" min="0" max="99" placeholder="-" class="quantity"></td>
+                    </tr>
+                    <tr>
+                        <td class="type">Sweet Longganisa</td>
+                        <td>140 / half kg</td>
+                        <td><input type="number" min="0" max="99" placeholder="-" class="quantity"></td>
+                    </tr>
+                    <tr>
+                        <td class="type">Sweet and Spicy Longganisa</td>
+                        <td>140 / half kg</td>
+                        <td><input type="number" min="0" max="99" placeholder="-" class="quantity"></td>
+                    </tr>
+                    <tr>
+                        <td class="type">Chorizo Longganisa</td>
+                        <td>150 / half kg</td>
+                        <td><input type="number" min="0" max="99" placeholder="-" class="quantity"></td>
+                    </tr>
+                    <tr>
+                        <td class="type">Mushroom Longganisa</td>
+                        <td>150 / half kg</td>
+                        <td><input type="number" min="0" max="99" placeholder="-" class="quantity"></td>
+                    </tr>
+                </table>
+            </fieldset>
+
+            <div class="btns">
+                <input type="reset" id="clear" value="Clear" class="clear" />
+                <input type="submit" id="submit" value="ORDER" class="submit"/>
+            </div>   
+        <!--End Form-->
+        </form>
+    </main>
+
+    <footer>
+        <div id="contact-details">
+            <p>Taste of Calumpit</p>
+            <a href="https://www.facebook.com/christructure" target="_blank"><img src="images/facebook_logo.svg" alt="facebook logo"></a>
+            <a href="https://www.instagram.com/christructure/" target="_blank"><img src="images/ig_logo.svg" alt="instagram logo"></a>
+        </div>
+    
+        <p>&copy; 2024 | Lorin Yambao</p>
+    </footer>
+
+    <!--Script-->
+    <script src="scripts/script.js"></script>
+</body>
+
+</html>
