@@ -1462,9 +1462,12 @@ main .contact-image {
         display: none;
     }
 
+    #about-main figcaption {
+        display: none;
+    }
+
     #about-main section p {
         color: black!important;
-
     }
 
     #promo-vid {
