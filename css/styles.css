@@ -1271,22 +1271,25 @@ main .contact-image {
     .order-image img {
         margin-top: 2.1em;
     }
+
     form {
-        margin: 0;
+        margin: 0 auto!important;
         padding: 0!important;
+        width: 100vw;
     }
 
+
     #personal-info input {
-        width: 250px!important;
+        width: 200px!important;
     }
 
     fieldset {
         padding: 0;
-        width: 50vw!important;
+        width: 30vw!important;
     }
 
     #address {
-        width: 280px;
+        width: 240px;
     }
 
     #address-right {
@@ -1301,7 +1304,7 @@ main .contact-image {
     #order-info {
         width: 250px!important;
         padding: 0.3em!important;
-        margin: 0 3em 2em 3em!important;
+        margin: 0 2em 2em 2em!important;
     }
 
     #order-info td {
