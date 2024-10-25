@@ -1093,12 +1093,14 @@ main .contact-image {
         margin-right: 0;
         margin-top: 1em;
         padding-right: 0;
+        margin-bottom: 0.5em;
     }
 
     #hero-section .order {
         padding: 1em;
         font-size: 0.8em;
         margin-bottom: 2em;
+        margin: 0 auto;
     }
     
     .section-odd, .section-even {
@@ -1272,7 +1274,7 @@ main .contact-image {
         margin-top: 2.1em;
     }
 
-    form {
+    #order-main form {
         margin: 0 auto!important;
         padding: 0!important;
         width: 100vw;
